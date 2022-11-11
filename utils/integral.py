@@ -19,5 +19,5 @@ def sinIntegral(x_min, x_max):
 
     return results
 
-    
+
 

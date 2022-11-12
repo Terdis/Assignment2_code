@@ -4,7 +4,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "hello giovanni"
+    return "hello giov"
 
 @app.route('/echo/<name>')
 def echo(name):

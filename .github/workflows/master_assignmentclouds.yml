@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'assignmentClouds'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_54179F55DCD6410D84010C0988AB37A5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A10FAE439834568B28270B326485137 }}

@@ -9,7 +9,7 @@ def hello():
    return render_template("index.html")
 
 
-@app.route('/echo/<min_max>')
+@app.route('/<min_max>')
 def echo(min_max):
     min, max=min_max.split("_")
 

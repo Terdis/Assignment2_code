@@ -11,13 +11,10 @@ def integrate(function, N, x_min, x_max):
     return integral
 
 def sinIntegral(x_min, x_max):
-    N=[10, 100, 1000, 1e4, 1e5, 1e6]
+    N=[10, 100, 1000, int(1e4), int(1e5), int(1e6)]
 
     function=lambda x: np.sin(x)
 
     results=np.array([integrate(function,  n, x_min, x_max) for n in N])
 
     return results
-
-
-

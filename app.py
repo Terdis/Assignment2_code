@@ -9,12 +9,12 @@ HELLO_HTML="""
 """
 @app.route('/')
 def hello():
-    return "hello Jova!"
+    name=request.args['min']
+    return HELLO_HTML.format(name, str(datetime.now()))
 
 @app.route('/echo/<name>')
 def echo(name):
-    name=request.args['min']
-    return HELLO_HTML.format(name, str(datetime.now()))
+    return f"Hello {name}"
 
 if __name__=='__main__':
     app.run()

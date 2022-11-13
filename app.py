@@ -9,10 +9,8 @@ def hello():
    return render_template("index.html")
 
 
-@app.route('/<min_max>')
-def echo(min_max):
-    min_x, max_x=min_max.split("_")
-
+@app.route('/<min_x>/<max_x>')
+def echo(min_x, max_x):
     values=integral.sinIntegral(float(min_x), float(max_x))
     return jsonify(values)
 

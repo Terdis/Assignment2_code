@@ -11,9 +11,9 @@ def hello():
 
 @app.route('/<min_max>')
 def echo(min_max):
-    min, max=min_max.split("_")
+    min_x, max_x=min_max.split("_")
 
-    values={'values' : integral.sinIntegral(float(min), float(max)).tolist()}
+    values={'values' : integral.sinIntegral(float(min_x), float(max_x)).tolist()}
     return jsonify(values)
 
 if __name__=='__main__':

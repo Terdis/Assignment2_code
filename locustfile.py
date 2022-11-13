@@ -1,4 +1,5 @@
-from locustfile import HttpUser, task
+from locust import HttpUser, task
+
 
 class HelloWorldUser(HttpUser):
     @task

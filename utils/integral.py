@@ -15,6 +15,6 @@ def sinIntegral(x_min, x_max):
 
     function=lambda x: np.sin(x)
 
-    results=np.array([integrate(function,  n, x_min, x_max) for n in N])
+    results={n : integrate(function,  n, x_min, x_max) for n in N}
 
     return results

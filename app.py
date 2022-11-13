@@ -13,7 +13,7 @@ def hello():
 def echo(min_max):
     min_x, max_x=min_max.split("_")
 
-    values={'values' : integral.sinIntegral(float(min_x), float(max_x)).tolist()}
+    values=integral.sinIntegral(float(min_x), float(max_x))
     return jsonify(values)
 
 if __name__=='__main__':
